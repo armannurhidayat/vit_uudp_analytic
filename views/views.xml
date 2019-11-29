@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <record id="view_uudp_pengajuan_form2" model="ir.ui.view">
+        <field name="name">uudp.pengajuan.form</field>
+        <field name="model">uudp</field>
+        <field name="type">form</field>
+        <field name="priority" eval="8"/>
+
+        <field name="inherit_id" ref="vit_uudp.view_uudp_pengajuan_form"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="location_id"/>
+                <field name="business_id"/>
+            </field>
+        </field>
+    </record>
+
+  </data>
+</odoo>
